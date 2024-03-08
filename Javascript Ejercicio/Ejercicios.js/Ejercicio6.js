@@ -5,5 +5,15 @@
 // grupo al que corresponde.
 
 let nombre = prompt("Ingrese el nombre");
-let sexo = prompt("Ingrese Sexo" + "Mujer" + "Hombre");
-let regexp = /[Mm-Nn]/gi;           
+let sexo = prompt("Ingrese Sexo" +  "  Mujer" +  "  Hombre");
+let Mujer = /^[A-Z]/g;
+let hombre = /^[N-Zn-z]/g;
+if (Mujer.test(nombre)==true && sexo== "Mujer") {
+    window.alert("Usted es del grupo A")
+}
+else if (hombre.test(nombre)==true&& sexo == "Hombre") {
+    window.alert("Usted Pertenece al grupo A")
+}           
+else {
+  window.alert("Usted es del grupo B")
+}
