@@ -8,19 +8,26 @@
 
 // en todas las pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana
 // o no y todos los ingredientes que lleva.
-let pregunta = prompt("Quiere una pizza vegetariana  o no  ").toLowerCase();
-let vegetariano =("Vegetariano: Pimentos y tofu")
-let no_vegetariano = ("No vegetarianos: Pepperoni, Jamón y Salmón");
-let ingrediente = prompt("Pimiento y tofu" +   "Pepperoni,Jamon,Salmon");
+let pregunta = prompt("¿Quiere una pizza vegetariana  o no?").toLowerCase();
+let Ingredientes_ve =("Pimentos y tofu")
+let Ingredientes_no_ve = ("Pepperoni Jamon y Salmon");
+let ingrediente_escogido
 if (pregunta == "vegetariana") {
-  window.alert(`Los ingredintes son ${ingrediente}`)
-}
-else if (ingrediente == "Pimiento") {
-  window.alert(`La pizza es vegetariana y tiene ${vegetariano}`)
+  ingrediente_escogido=prompt("Elige los ingredientes: Pimiento y Tofu").toLowerCase()
+  if (ingrediente_escogido == "pimiento"|| ingrediente_escogido=="tofu") {
+    window.alert(`La pizza es vegetariana y tiene ${ingrediente_escogido}`)
+  }
+  else{
+    window.alert("No ha elegido ninguna opcion")
+  }
+  
 }
 else if (pregunta == "no") {
-  window.alert(`Los ingredintes son ${ingredinte}`)
-}
-else if (ingrediente == "Pepperoni") {
-  window.alert(`Los ingredintes son ${no_vegetariano}`)
+  ingrediente_escogido=prompt("Elige los ingredientes: Pepperoni Jamon y Salmon ").toLowerCase()
+  if (ingrediente_escogido == "pepperoni"|| ingrediente_escogido=="jamon"||ingrediente_escogido=="salmon") {
+    window.alert(`La pizza es no vegetariana y tiene ${ingrediente_escogido}`)
+  }
+  else{
+    window.alert("No ah elegido ninguna opcion ")
+  }
 }
