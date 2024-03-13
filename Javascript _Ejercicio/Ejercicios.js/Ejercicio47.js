@@ -17,11 +17,6 @@ else if(num1==num2 && num1==num3){
     alert(`Los tres digitos son iguales`)
 }
 let menor;
-
-
-
-
-
 if(num1<num2 && num1<num3){
     menor=num1;
 }
