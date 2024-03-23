@@ -4,3 +4,4 @@ function cadena(){
     let cadena_sin_vocales = ca_dena.replace(/[aáAÁeéEÉiíIÍoOóÓuúÚ]/gi, '');
     alert(`Cadena sin vocales: ${cadena_sin_vocales}`);
 }
+cadena()

@@ -7,3 +7,4 @@ function binario(){
     let binari = suma.toString(2);
     alert(`El resultado de la suma de ${num1} + ${num2} en numero binario es ${binari}`);
 }
+binario()

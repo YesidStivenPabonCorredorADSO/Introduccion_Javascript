@@ -3,9 +3,10 @@
 function num(){
     let cantidad = prompt("Ingresa la cantidad de numeros: ");
 let numero = [];
-for (let i = 0; i < cantidad; a++){
-    numero[a] = prompt("Ingresa el numero");
-    numero[a] = -(numero[i]);
+for (let i = 0; i < cantidad; i++){
+    numero[i] = prompt("Ingresa el numero");
+    numero[i] = -(numero[i]);
 }
 alert(`Numeros: ${numero}`);
 }
+num()
